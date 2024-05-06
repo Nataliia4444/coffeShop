@@ -6,7 +6,7 @@ import css from "./Delicious.module.css";
 
 function Delicious() {
   return (
-    <div className={css.overlay}>
+    <div className={`${css.overlay}`}>
       <div className={`${css.deliciousSections} ${css.container}`}>
         <h1 className={css.deliciousTitle}>Explore Our Alowishus</h1>
         <p className={css.deliciousDescriptions}>

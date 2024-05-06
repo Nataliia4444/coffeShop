@@ -8,7 +8,7 @@ function Offers() {
   return (
     <div>
       <ul className={css.cardsList}>
-        <li className={css.card}>
+        <li className={`${css.card} ${css.kenburnsTop}`}>
           <h1 className={css.cardsTitle}>Our Catering</h1>
           <p className={css.cardsDescription}>
             Alowishus Catering, delicious drop off Catering

@@ -9,7 +9,9 @@ function Hero() {
     <main>
       <section className={`${css.hero} ${css.container}`}>
         <div className={css.heroInfo}>
-          <h1 className={css.heroTitle}>Alowishus Delicious Coffee </h1>
+          <h1 className={`${css.heroTitle} ${css.textShadowPopTop}`}>
+            Alowishus Delicious Coffee{" "}
+          </h1>
           <p className={css.heroDescription}>
             A drink from the ‘My Alowishus’ bottled brews range OR grab one of
             our delicious coffee’s.

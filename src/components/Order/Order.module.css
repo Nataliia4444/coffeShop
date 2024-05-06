@@ -3,33 +3,45 @@
   display: flex;
   gap: 21px;
 }
-
+.overlay {
+  background-image: url(/src/assets/Order/order.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .ordersDescription {
   font-size: 24px;
   max-width: 512px;
   margin-top: 30px;
   margin-bottom: 60px;
 }
-.ordersBtn {
-  width: 128px;
-  height: 36px;
-  background-color: black;
-  color: azure;
-  font-weight: 400;
-  text-decoration: none;
-  font-size: 15px;
-  line-height: 26px;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
+
 .ordersTitle {
-  font-size: 64px;
-  line-height: 70px;
+  font-size: 54px;
+  line-height: 50px;
   color: #1b1b1d;
   font-weight: 700;
+}
+.orderImage {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .ordersTitle {
+    font-size: 64px;
+    line-height: 70px;
+    color: #1b1b1d;
+  }
+  .orderImage {
+    display: block;
+  }
+  .overlay {
+    background-image: none;
+  }
+}
+.orderInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .container {
   min-width: 320px;
@@ -39,7 +51,9 @@
   padding-right: 16px;
   padding-left: 16px;
 }
-
+/* .orderSection {
+  display: flex;
+} */
 /* TABLET STYLES */
 @media only screen and (min-width: 768px) {
   .container {

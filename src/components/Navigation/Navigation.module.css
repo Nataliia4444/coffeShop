@@ -1,6 +1,6 @@
 .navHeader {
-  display: flex;
-  width: 686px;
+  display: none;
+
   gap: 20px;
   align-items: center;
 }
@@ -25,4 +25,10 @@
   align-items: center;
   gap: 10px;
   margin-left: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .navHeader {
+    display: flex;
+  }
 }

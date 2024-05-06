@@ -13,6 +13,7 @@ import Header from "./components/Header/Header";
 import Menu from "./components/Menu/Menu";
 import Hero from "./components/Hero/Hero";
 import Footer from "./components/Footer/Footer";
+import Order from "./components/Order/Order";
 
 function App() {
   return (
@@ -22,12 +23,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/about" element={<Hero />} />
-        <Route path="/findUs" element={<div></div>} />
-        <Route path="/catering" element={<div></div>} />
+        <Route path="/findUs" element={<Order />} />
         <Route path="/basket" element={<div></div>} />
         <Route path="*" element={<div></div>} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

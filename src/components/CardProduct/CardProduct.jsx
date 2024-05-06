@@ -7,7 +7,7 @@ import css from "./CardProduct.module.css";
 //* CARD PRODUCT FROM THE MENU
 function CardProduct({ price, description, title, id }) {
   return (
-    <li className={css.cardProduct} id={id}>
+    <li className={`${css.cardProduct} ${css.scaleInCenter}`} id={id}>
       <img
         className={css.cardImageProduct}
         src="/src/assets/Menu/menu.png"

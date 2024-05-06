@@ -1,10 +1,18 @@
 .cardsList {
   display: flex;
-  width: 1158px;
   justify-content: center;
+  align-items: center;
   gap: 25px;
   margin-top: 88px;
   list-style: none;
+
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 768px) {
+  .cardsList {
+    width: 1158px;
+    flex-wrap: nowrap;
+  }
 }
 .card {
   height: 540px;
@@ -12,7 +20,7 @@
   padding-left: 55px;
   padding-right: 55px;
   padding-bottom: 40px;
-  width: 393px;
+  width: 280px;
 
   display: flex;
   justify-content: center;
@@ -21,6 +29,16 @@
   -webkit-box-shadow: -2px 6px 14px -4px rgba(191, 191, 191, 1);
   -moz-box-shadow: -2px 6px 14px -4px rgba(191, 191, 191, 1);
   box-shadow: -2px 6px 14px -4px rgba(191, 191, 191, 1);
+}
+@media only screen and (min-width: 768px) {
+  .card {
+    height: 540px;
+    width: 393px;
+    padding-top: 35px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 40px;
+  }
 }
 .cardsTitle {
   font-size: 36px;
@@ -34,22 +52,7 @@
   font-weight: 400;
   margin-top: 8px;
 }
-.cardsBtn {
-  width: 128px;
-  height: 36px;
-  background-color: black;
-  color: azure;
-  font-weight: 400;
-  text-decoration: none;
-  font-size: 15px;
-  line-height: 26px;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: 60px;
-}
+
 .cardsImage {
   margin-top: 60px;
   margin-bottom: 40px;

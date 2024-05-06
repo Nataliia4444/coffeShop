@@ -1,13 +1,13 @@
 .footerForm {
-  width: 413px;
+  width: 280px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   margin-top: 30px;
 }
 .formTitle {
-  font-size: 40px;
-  line-height: 30px;
+  font-size: 30px;
+  line-height: 25px;
   font-weight: 700;
   color: #1b1b1d;
 }
@@ -15,4 +15,13 @@
   border: none;
   padding: 20px 30px;
   border-radius: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .footerForm {
+    width: 413px;
+  }
+  .formTitle {
+    font-size: 40px;
+    line-height: 30px;
+  }
 }

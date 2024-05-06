@@ -23,9 +23,7 @@ function Navigation() {
         <NavLink to="/findUs" className={css.navText}>
           Find Us
         </NavLink>
-        <NavLink to="/catering" className={css.navText}>
-          Alowishus Catering
-        </NavLink>
+
         <NavLink to="/basket" className={css.navBasket}>
           Basket
           <IconBasketFill />

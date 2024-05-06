@@ -8,7 +8,9 @@ import css from "./Menu.module.css";
 function Menu() {
   return (
     <div className={`${css.menuSection} ${css.container}`}>
-      <h2 className={css.menuTitle}>Best Selling Coffee</h2>
+      <h2 className={`${css.menuTitle} ${css.trackingInContractBck}`}>
+        Best Selling Coffee
+      </h2>
       <p className={css.menuDescription}>
         A drink from the ‘My Alowishus’ bottled brews range OR grab one of our
         delicious coffee’s.

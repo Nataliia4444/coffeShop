@@ -1,5 +1,9 @@
 .deliciousSections {
   padding-top: 156px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline; */
 }
 .overlay {
   background-image: url("/src/assets/Offers/bacgroundSection.png");
@@ -35,8 +39,16 @@
   margin-top: 24px;
 }
 .deliciousTitle {
-  font-size: 64px;
-  line-height: 70px;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 50px;
+
   color: #1b1b1d;
   text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .deliciousTitle {
+    font-size: 64px;
+    line-height: 70px;
+  }
 }
