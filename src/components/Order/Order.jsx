@@ -1,6 +1,8 @@
 //* DEFAULT BUTTON
 import Button from "../Button/Button";
 
+import image from "/src/image/Order/order.png";
+
 //* STYLES
 import css from "./Order.module.css";
 
@@ -9,12 +11,7 @@ function Order() {
     <div className={css.overlay}>
       <div className={css.container}>
         <div className={css.orderSection}>
-          <img
-            src="/src/image/Order/order.png"
-            alt=""
-            width={640}
-            className={css.orderImage}
-          />
+          <img src={image} alt="" width={640} className={css.orderImage} />
           <div className={css.orderInfo}>
             <h2 className={css.ordersTitle}>Order Your Favourite Coffee</h2>
             <p className={css.ordersDescription}>

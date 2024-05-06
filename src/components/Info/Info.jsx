@@ -2,6 +2,8 @@
 //* COMPONENT FORM
 import Form from "../Form/Form";
 
+import image from "/src/image/LogoInfo/InfoLogo.png";
+
 //* STYLES
 import css from "./Info.module.css";
 
@@ -9,7 +11,7 @@ function Info() {
   return (
     <div className={`${css.infoContainer} ${css.container}`}>
       <div className={css.infoSection}>
-        <img src="/src/image/LogoInfo/InfoLogo.png" alt="" width={307} />
+        <img src={image} alt="" width={307} />
         <p className={css.infoDescription}>
           We made it our mission to create community everyday and grow
           meaningful, lasting relationships with our staff, our suppliers and of

@@ -1,6 +1,8 @@
 //* DEFAULR BUTTON
 import Button from "../Button/Button";
 
+import image from "/src/image/Offers/food.png";
+
 //* STYLES
 import css from "./Offers.module.css";
 
@@ -13,12 +15,7 @@ function Offers() {
           <p className={css.cardsDescription}>
             Alowishus Catering, delicious drop off Catering
           </p>
-          <img
-            className={css.cardsImage}
-            src="/src/image/Offers/food.png"
-            alt=""
-            width={150}
-          />
+          <img className={css.cardsImage} src={image} alt="" width={150} />
           <Button value="Menu ->" />
         </li>
         <li className={css.card}>
@@ -27,12 +24,7 @@ function Offers() {
           <p className={css.cardsDescription}>
             Our entire menu is available as dine in or takeaway.
           </p>
-          <img
-            className={css.cardsImage}
-            src="/src/image/Offers/food.png"
-            alt=""
-            width={150}
-          />
+          <img className={css.cardsImage} src={image} alt="" width={150} />
           <Button value="Menu ->" />
         </li>
         <li className={css.card}>
@@ -41,12 +33,7 @@ function Offers() {
           <p className={css.cardsDescription}>
             Life is like GELATO, enjoy it before it melts.
           </p>
-          <img
-            className={css.cardsImage}
-            src="/src/image/Offers/food.png"
-            alt=""
-            width={150}
-          />
+          <img className={css.cardsImage} src={image} alt="" width={150} />
           <Button value="Menu ->" />
         </li>
       </ul>

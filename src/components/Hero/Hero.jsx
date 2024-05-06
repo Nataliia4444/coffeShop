@@ -1,6 +1,8 @@
 //* DEFAULT BUTTON
 import Button from "../Button/Button";
 
+import image from "/src/image/Hero/heroOverlay.png";
+
 //* STYLES
 import css from "./Hero.module.css";
 
@@ -24,7 +26,7 @@ function Hero() {
           </div>
         </div>
         <div>
-          <img src="/src/image/Hero/heroOverlay.png" alt="" />
+          <img src={image} alt="" />
         </div>
       </section>
     </main>

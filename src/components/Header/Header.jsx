@@ -1,5 +1,6 @@
 //* NAVIGATION
 import Navigation from "../Navigation/Navigation";
+import image from "/src/image/Logo/image 2.png";
 
 //* STYLES
 import css from "./Header.module.css";
@@ -10,7 +11,7 @@ function Header() {
         <div className={css.border}>
           <div className={`${css.headerContainer} ${css.container}`}>
             <img
-              src="/src/image/Logo/image 2.png"
+              src={image}
               alt=""
               width="126px"
               height="50px"
