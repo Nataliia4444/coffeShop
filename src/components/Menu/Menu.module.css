@@ -1,0 +1,54 @@
+.menuSection {
+  padding-top: 182px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menuTitle {
+  font-size: 64px;
+  color: #1b1b1d;
+  font-weight: 600;
+}
+.menuDescription {
+  font-weight: 24px;
+  width: 404px;
+  font-weight: 400;
+  margin-top: 24px;
+  text-align: center;
+}
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 90px;
+  column-gap: 25px;
+
+  width: 1158px;
+  justify-content: center;
+
+  margin-top: 88px;
+
+  list-style: none;
+}
+.container {
+  min-width: 320px;
+  max-width: 428px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+}
+
+/* DESKTOP STYLES */
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+}

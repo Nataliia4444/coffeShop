@@ -1,0 +1,23 @@
+/* CONTAINER */
+.container {
+  min-width: 320px;
+  max-width: 428px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+}
+
+/* DESKTOP STYLES */
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+}

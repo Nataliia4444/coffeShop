@@ -1,0 +1,28 @@
+.navHeader {
+  display: flex;
+  width: 686px;
+  gap: 20px;
+  align-items: center;
+}
+.navText {
+  font-size: 15px;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+}
+.navBasket {
+  width: 128px;
+  height: 36px;
+  background-color: black;
+  color: azure;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 26px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}

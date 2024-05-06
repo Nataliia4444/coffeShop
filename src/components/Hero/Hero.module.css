@@ -1,0 +1,72 @@
+.hero {
+  display: flex;
+  margin-top: 123px;
+}
+.heroInfo {
+  width: 597px;
+  height: 650px;
+}
+.heroTitle {
+  color: black;
+  font-weight: 800;
+  font-size: 124px;
+  line-height: 140px;
+}
+.heroDescription {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.heroBtn {
+  width: 225px;
+  height: 70px;
+  background-color: black;
+  color: azure;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 30px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+}
+.heroOffers {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+.heroShop {
+  color: black;
+  font-size: 18px;
+}
+.heroShop::before {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  color: rgb(160, 160, 71);
+}
+.container {
+  min-width: 320px;
+  max-width: 428px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+}
+
+/* DESKTOP STYLES */
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+}

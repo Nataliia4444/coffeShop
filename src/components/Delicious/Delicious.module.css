@@ -1,0 +1,42 @@
+.deliciousSections {
+  padding-top: 156px;
+}
+.overlay {
+  background-image: url("/src/assets/Offers/bacgroundSection.png");
+  background-repeat: no-repeat;
+}
+.container {
+  min-width: 320px;
+  max-width: 428px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+}
+
+/* DESKTOP STYLES */
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+}
+.deliciousDescriptions {
+  font-size: 24px;
+  max-width: 604px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+}
+.deliciousTitle {
+  font-size: 64px;
+  line-height: 70px;
+  color: #1b1b1d;
+  text-align: center;
+}

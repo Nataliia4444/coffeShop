@@ -1,0 +1,18 @@
+.footerForm {
+  width: 413px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+.formTitle {
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #1b1b1d;
+}
+.formInput {
+  border: none;
+  padding: 20px 30px;
+  border-radius: 30px;
+}
