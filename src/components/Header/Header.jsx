@@ -10,7 +10,7 @@ function Header() {
         <div className={css.border}>
           <div className={`${css.headerContainer} ${css.container}`}>
             <img
-              src="./src/assets/Logo/image 2.png"
+              src="/src/image/Logo/image 2.png"
               alt=""
               width="126px"
               height="50px"

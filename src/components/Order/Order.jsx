@@ -10,7 +10,7 @@ function Order() {
       <div className={css.container}>
         <div className={css.orderSection}>
           <img
-            src="/src/assets/Order/order.png"
+            src="/src/image/Order/order.png"
             alt=""
             width={640}
             className={css.orderImage}

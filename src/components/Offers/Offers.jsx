@@ -15,7 +15,7 @@ function Offers() {
           </p>
           <img
             className={css.cardsImage}
-            src="/src/assets/Offers/food.png"
+            src="/src/image/Offers/food.png"
             alt=""
             width={150}
           />
@@ -29,7 +29,7 @@ function Offers() {
           </p>
           <img
             className={css.cardsImage}
-            src="/src/assets/Offers/fast-food.png"
+            src="/src/image/Offers/food.png"
             alt=""
             width={150}
           />
@@ -43,7 +43,7 @@ function Offers() {
           </p>
           <img
             className={css.cardsImage}
-            src="/src/assets/Offers/ice-cream.png"
+            src="/src/image/Offers/food.png"
             alt=""
             width={150}
           />

@@ -6,7 +6,7 @@
   justify-content: baseline; */
 }
 .overlay {
-  background-image: url("/src/assets/Offers/bacgroundSection.png");
+  background-image: url("/src/image/Offers/bacgroundSection.png");
   background-repeat: no-repeat;
 }
 .container {

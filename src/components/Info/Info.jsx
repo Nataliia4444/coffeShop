@@ -9,7 +9,7 @@ function Info() {
   return (
     <div className={`${css.infoContainer} ${css.container}`}>
       <div className={css.infoSection}>
-        <img src="/src/assets/LogoInfo/InfoLogo.png" alt="" width={307} />
+        <img src="/src/image/LogoInfo/InfoLogo.png" alt="" width={307} />
         <p className={css.infoDescription}>
           We made it our mission to create community everyday and grow
           meaningful, lasting relationships with our staff, our suppliers and of

@@ -27,7 +27,7 @@ function App() {
         <Route path="/basket" element={<div></div>} />
         <Route path="*" element={<div></div>} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

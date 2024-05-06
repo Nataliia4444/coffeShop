@@ -24,7 +24,7 @@ function Hero() {
           </div>
         </div>
         <div>
-          <img src="/src/assets/Hero/heroOverlay.png" alt="" />
+          <img src="/src/image/Hero/heroOverlay.png" alt="" />
         </div>
       </section>
     </main>
