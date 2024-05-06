@@ -1,5 +1,6 @@
 //* DEFAULT BUTTON
 import Button from "../Button/Button";
+import image from "/src/image/Menu/menu.png";
 
 //* STYLES
 import css from "./CardProduct.module.css";
@@ -8,12 +9,7 @@ import css from "./CardProduct.module.css";
 function CardProduct({ price, description, title, id }) {
   return (
     <li className={`${css.cardProduct} ${css.scaleInCenter}`} id={id}>
-      <img
-        className={css.cardImageProduct}
-        src="/src/image/Menu/menu.png"
-        alt=""
-        width={168}
-      />
+      <img className={css.cardImageProduct} src={image} alt="" width={168} />
       <div className={css.priceWrapper}>
         <h1 className={css.cardsTitle}>{title}</h1>
         <p className={css.cardPrice}>{price}$</p>
