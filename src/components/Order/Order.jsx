@@ -19,7 +19,9 @@ function Order() {
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </p>
-            <Button value="Order Now" />
+            <a href="/menu" className={css.heroShop} rel="noopener noreferrer">
+              <Button value="Order Now" />
+            </a>
           </div>
         </div>
       </div>

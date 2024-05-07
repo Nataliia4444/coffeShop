@@ -5,11 +5,11 @@ import menuData from "../../Data/Data";
 import CardProduct from "../CardProduct/CardProduct";
 import css from "./Menu.module.css";
 
-function Menu() {
+function Menu({ setListId }) {
   return (
     <div className={`${css.menuSection} ${css.container}`}>
       <h2 className={`${css.menuTitle} ${css.trackingInContractBck}`}>
-        Best Selling Coffee
+        Menu Of The Best Coffee
       </h2>
       <p className={css.menuDescription}>
         A drink from the ‘My Alowishus’ bottled brews range OR grab one of our
@@ -24,6 +24,7 @@ function Menu() {
               key={id}
               title={title}
               id={id}
+              setListId={setListId}
             />
           );
         })}

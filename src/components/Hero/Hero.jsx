@@ -19,8 +19,11 @@ function Hero() {
             our delicious coffee’s.
           </p>
           <div className={css.heroOffers}>
-            <Button value="Download App" />
-            <a href="" className={css.heroShop}>
+            <a href="/about" rel="noopener noreferrer">
+              <Button value="Download App" />
+            </a>
+
+            <a href="/menu" className={css.heroShop} rel="noopener noreferrer">
               Shop Coffee
             </a>
           </div>

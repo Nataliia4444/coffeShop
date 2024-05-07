@@ -4,9 +4,13 @@ import image from "/src/image/Menu/menu.png";
 
 //* STYLES
 import css from "./CardProduct.module.css";
+// import { useState } from "react";
 
 //* CARD PRODUCT FROM THE MENU
-function CardProduct({ price, description, title, id }) {
+function CardProduct({ price, description, title, id, setListId }) {
+  function handleClick(id) {
+    setListId((prev) => [...prev, id]);
+  }
   return (
     <li className={`${css.cardProduct} ${css.scaleInCenter}`} id={id}>
       <img className={css.cardImageProduct} src={image} alt="" width={168} />
@@ -19,7 +23,11 @@ function CardProduct({ price, description, title, id }) {
         <p className={css.cardsDescription}>{description}</p>
       </div>
       <div className={css.cardsBtn}>
-        <Button value="Order now" className={css.cardsBtn} />
+        <Button
+          value="Order now"
+          className={css.cardsBtn}
+          handleClick={() => handleClick(id)}
+        />
       </div>
     </li>
   );
