@@ -5,6 +5,7 @@ import image from "/src/image/Order/order.png";
 
 //* STYLES
 import css from "./Order.module.css";
+import { NavLink } from "react-router-dom";
 
 function Order() {
   return (
@@ -19,9 +20,10 @@ function Order() {
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </p>
-            <a href="/menu" className={css.heroShop} rel="noopener noreferrer">
+
+            <NavLink to="/menu" className={css.navText}>
               <Button value="Order Now" />
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>

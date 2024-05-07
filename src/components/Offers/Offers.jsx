@@ -5,6 +5,7 @@ import image from "/src/image/Offers/food.png";
 
 //* STYLES
 import css from "./Offers.module.css";
+import { NavLink } from "react-router-dom";
 
 function Offers() {
   return (
@@ -16,9 +17,10 @@ function Offers() {
             Alowishus Catering, delicious drop off Catering
           </p>
           <img className={css.cardsImage} src={image} alt="" width={150} />
-          <a href="/menu" className={css.heroShop} rel="noopener noreferrer">
+
+          <NavLink to="/menu">
             <Button value="Menu ->" />
-          </a>
+          </NavLink>
         </li>
         <li className={css.card}>
           {" "}
@@ -27,9 +29,9 @@ function Offers() {
             Our entire menu is available as dine in or takeaway.
           </p>
           <img className={css.cardsImage} src={image} alt="" width={150} />
-          <a href="/menu" className={css.heroShop} rel="noopener noreferrer">
+          <NavLink to="/menu">
             <Button value="Menu ->" />
-          </a>
+          </NavLink>
         </li>
         <li className={css.card}>
           {" "}
@@ -38,9 +40,9 @@ function Offers() {
             Life is like GELATO, enjoy it before it melts.
           </p>
           <img className={css.cardsImage} src={image} alt="" width={150} />
-          <a href="/menu" className={css.heroShop} rel="noopener noreferrer">
+          <NavLink to="/menu">
             <Button value="Menu ->" />
-          </a>
+          </NavLink>
         </li>
       </ul>
     </div>

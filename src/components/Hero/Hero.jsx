@@ -5,6 +5,7 @@ import image from "/src/image/Hero/heroOverlay.png";
 
 //* STYLES
 import css from "./Hero.module.css";
+import { NavLink } from "react-router-dom";
 
 function Hero() {
   return (
@@ -19,13 +20,13 @@ function Hero() {
             our delicious coffee’s.
           </p>
           <div className={css.heroOffers}>
-            <a href="/about" rel="noopener noreferrer">
-              <Button value="Download App" />
-            </a>
-
-            <a href="/menu" className={css.heroShop} rel="noopener noreferrer">
+            <NavLink to="/about" className={css.heroShop}>
               Shop Coffee
-            </a>
+            </NavLink>
+
+            <NavLink to="/menu">
+              <Button value="Menu ->" />
+            </NavLink>
           </div>
         </div>
         <div>
