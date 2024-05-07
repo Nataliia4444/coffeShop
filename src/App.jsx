@@ -17,6 +17,7 @@ import Order from "./components/Order/Order";
 import Basket from "./pages/Basket/Basket";
 import { useState } from "react";
 import data from "./Data/Data";
+import Error from "./pages/Error/Error";
 
 function App() {
   const [listId, setListId] = useState([]);
@@ -37,7 +38,7 @@ function App() {
         <Route path="/about" element={<Hero />} />
         <Route path="/findUs" element={<Order />} />
         <Route path="/basket" element={<Basket basketData={basketData} />} />
-        <Route path="*" element={<div></div>} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </div>
