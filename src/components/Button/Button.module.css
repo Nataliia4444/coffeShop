@@ -5,8 +5,8 @@
   color: azure;
   font-weight: 400;
   text-decoration: none;
-  font-size: 15px;
-  line-height: 26px;
+  font-size: 10px;
+  line-height: 12px;
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -14,10 +14,17 @@
   gap: 10px;
   transition: all 1s ease-out;
 }
+@media only screen and (min-width: 768px) {
+  .btn {
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
+
 .btn:hover,
 .btn:focus {
   background-color: aliceblue;
   color: black;
-  font-weight: 700;
+  font-weight: 600;
   outline: 3px solid rgb(9, 9, 9);
 }
