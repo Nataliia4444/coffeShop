@@ -4,13 +4,13 @@ import Info from "../../components/Info/Info";
 import Menu from "../../components/Menu/Menu";
 import Order from "../../components/Order/Order";
 
-function Home({ setListId }) {
+function Home({ setListId, setBasket }) {
   return (
     <>
       {<Hero />}
       <Delicious />
       <Order />
-      <Menu setListId={setListId} />
+      <Menu setListId={setListId} setBasket={setBasket} />
       <Info />
     </>
   );

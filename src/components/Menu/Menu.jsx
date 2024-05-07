@@ -5,7 +5,7 @@ import menuData from "../../Data/Data";
 import CardProduct from "../CardProduct/CardProduct";
 import css from "./Menu.module.css";
 
-function Menu({ setListId }) {
+function Menu({ setListId, setBasket }) {
   return (
     <div className={`${css.menuSection} ${css.container}`}>
       <h2 className={`${css.menuTitle} ${css.trackingInContractBck}`}>
@@ -25,6 +25,7 @@ function Menu({ setListId }) {
               title={title}
               id={id}
               setListId={setListId}
+              setBasket={setBasket}
             />
           );
         })}

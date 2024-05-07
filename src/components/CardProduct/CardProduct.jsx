@@ -7,9 +7,10 @@ import css from "./CardProduct.module.css";
 // import { useState } from "react";
 
 //* CARD PRODUCT FROM THE MENU
-function CardProduct({ price, description, title, id, setListId }) {
+function CardProduct({ price, description, title, id, setListId, setBasket }) {
   function handleClick(id) {
     setListId((prev) => [...prev, id]);
+    setBasket(true);
   }
   return (
     <li className={`${css.cardProduct} ${css.scaleInCenter}`} id={id}>

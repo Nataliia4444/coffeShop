@@ -21,6 +21,7 @@ import Error from "./pages/Error/Error";
 
 function App() {
   const [listId, setListId] = useState([]);
+  const [basket, setBasket] = useState(false);
 
   const menu = data;
   const basketData = menu.filter(({ id }) => {
@@ -30,14 +31,22 @@ function App() {
     <div>
       <Header />
       <Routes>
-        <Route path="/" element={<Home setListId={setListId} />} />
+        <Route
+          path="/"
+          element={<Home setListId={setListId} setBasket={setBasket} />}
+        />
         <Route
           path="/menu"
-          element={<Menu setListId={setListId} listId={listId} />}
+          element={
+            <Menu setListId={setListId} listId={listId} setBasket={setBasket} />
+          }
         />
         <Route path="/about" element={<Hero />} />
         <Route path="/findUs" element={<Order />} />
-        <Route path="/basket" element={<Basket basketData={basketData} />} />
+        <Route
+          path="/basket"
+          element={<Basket basketData={basketData} basket={basket} />}
+        />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
